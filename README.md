@@ -10,4 +10,4 @@ HTML/CSS For Sociolla Flash Sale
 DEMO: https://sociolla-flash-sale-markups.netlify.com
 
 Full Page Screenshot
-![Full Page Screenshot](https://github.com/soubhikchatterjee/online-food-order-template/blob/master/img/screenshot_full.png?raw=true)
+![Full Page Screenshot](https://github.com/soubhikchatterjee/sociolla-flash-sale-markups/blob/master/img/screenshot.png?raw=true)
