@@ -1,2 +1,13 @@
 # sociolla-flash-sale
-HTML/CSS/VueJs For Sociolla Flash Sale
+
+HTML/CSS For Sociolla Flash Sale
+
+### To Run in Development:
+
+`npm run watch`
+
+### To build for production
+
+`npm run build:css`
+
+[![N|Solid](https://sociolla-flash-sale-markups.netlify.com)](View Demo)
