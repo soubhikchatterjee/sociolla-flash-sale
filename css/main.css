@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.hero {
+  max-width: 100vw;
+  height: 600px;
+  background-image: url("/img/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero .container {
+    margin: auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero .container h1.title {
+      padding: 15px 0; }
+    .hero .container .timer-wrapper {
+      display: flex;
+      align-items: center; }
+      .hero .container .timer-wrapper .content {
+        margin-right: 15px;
+        text-transform: uppercase;
+        font-size: 0.77rem;
+        letter-spacing: 2px; }
+      .hero .container .timer-wrapper .timers .time {
+        background-color: #fa9aa4;
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 0.55rem; }
+      .hero .container .timer-wrapper .timers .seperator {
+        font-size: 0.77rem; }
+    .hero .container .cards-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 40px;
+      height: 350px; }
+      .hero .container .cards-wrapper .card {
+        background: #ffffff;
+        min-height: 350px;
+        max-height: 350px;
+        width: 200px;
+        height: 100%;
+        padding: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column; }
+        .hero .container .cards-wrapper .card .header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 15px; }
+          .hero .container .cards-wrapper .card .header .discount {
+            background: #da2a52;
+            border-radius: 50%;
+            padding: 5px;
+            height: 25px;
+            width: 25px;
+            color: #ffffff;
+            font-size: 0.55rem;
+            line-height: 15px; }
+          .hero .container .cards-wrapper .card .header .favourite {
+            color: #cccccc;
+            cursor: pointer; }
+        .hero .container .cards-wrapper .card .product-image {
+          position: relative;
+          margin-bottom: 15px; }
+          .hero .container .cards-wrapper .card .product-image img {
+            width: 100%;
+            height: 100px; }
+          .hero .container .cards-wrapper .card .product-image .sold-out-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 252, 252, 0.7); }
+            .hero .container .cards-wrapper .card .product-image .sold-out-wrapper .sold-out-content {
+              width: 100%;
+              height: 100%;
+              margin: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .hero .container .cards-wrapper .card .product-image .sold-out-wrapper .sold-out-content .text {
+                background: rgba(0, 0, 0, 0.3);
+                padding: 13px;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 0.56rem;
+                letter-spacing: 1px; }
+        .hero .container .cards-wrapper .card .product-info {
+          flex-grow: 1;
+          width: 100%;
+          text-align: center; }
+          .hero .container .cards-wrapper .card .product-info h2.product-title {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px; }
+          .hero .container .cards-wrapper .card .product-info p.content {
+            font-size: 0.65rem;
+            margin-bottom: 10px; }
+          .hero .container .cards-wrapper .card .product-info .old-price {
+            font-size: 0.65rem;
+            text-decoration: line-through;
+            color: #cccccc;
+            margin-bottom: 5px; }
+          .hero .container .cards-wrapper .card .product-info .new-price {
+            font-size: 0.65rem;
+            font-weight: bold; }
+          .hero .container .cards-wrapper .card .product-info a.more-options, .hero .container .cards-wrapper .card .product-info div.more-options {
+            font-size: 0.65rem;
+            color: #cccccc;
+            text-decoration: none; }
+            .hero .container .cards-wrapper .card .product-info a.more-options:hover, .hero .container .cards-wrapper .card .product-info div.more-options:hover {
+              color: #da2a52; }
+          .hero .container .cards-wrapper .card .product-info div.more-options:hover {
+            color: #cccccc; }
+          .hero .container .cards-wrapper .card .product-info.soldout {
+            color: #cccccc; }
+        .hero .container .cards-wrapper .card .footer a.btn-review {
+          border: 1px solid #000000;
+          color: #000000;
+          padding: 4px;
+          font-size: 0.64rem;
+          letter-spacing: 1px;
+          font-weight: bold;
+          text-transform: uppercase;
+          border-radius: 4px;
+          text-decoration: none;
+          width: 100%;
+          text-align: center;
+          display: inline-block; }
+          .hero .container .cards-wrapper .card .footer a.btn-review:hover {
+            border: 1px solid #da2a52;
+            color: #da2a52; }
+        .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot {
+          background: #f5b0b3;
+          width: 100%;
+          height: 8px;
+          border-radius: 8px; }
+          .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot .progress-bar-foreground, .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot .progress-bar-foreground .progress-percentage-30, .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot .progress-bar-foreground .progress-percentage-80 {
+            height: 8px;
+            width: 100%;
+            border-radius: 8px;
+            height: 8px; }
+            .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot .progress-bar-foreground .progress-percentage-30 {
+              background: #da2a52;
+              width: 30%; }
+            .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-background-hot .progress-bar-foreground .progress-percentage-80 {
+              background: #da2a52;
+              width: 80%; }
+        .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-label-hot {
+          color: #da2a52;
+          font-size: 0.69rem;
+          text-transform: uppercase;
+          margin-top: 5px;
+          letter-spacing: 1px; }
+        .hero .container .cards-wrapper .card .footer .progress-bar-wrapper .progress-bar-label-cold {
+          color: #cccccc;
+          font-size: 0.69rem;
+          margin-top: 5px; }
+        .hero .container .cards-wrapper .card .footer .label-sold {
+          font-size: 0.57rem;
+          color: #da2a52;
+          text-align: center; }
+    .hero .container a.btn-more-sale {
+      width: 150px;
+      padding: 7px;
+      background: #ffffff;
+      border: 1px solid #000000;
+      color: #000000;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 0.77rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 55px; }
+      .hero .container a.btn-more-sale:hover {
+        background: #da2a52;
+        border: 1px solid #000000;
+        color: #ffffff; }
